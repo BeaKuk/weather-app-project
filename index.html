@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>weather-app</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card1 bg-transparent text-dark">
+            <img src="/images/chmurka.png" class="card-img" alt="sunAndCloud" />
+
+
+
+            <form class="d-flex" id="search-location">
+                <input class="form-control me-2" type="search" placeholder="What is your city?" autofocus="on"
+                    autocomplete="off" aria-label="Search" id="query" />
+                <button class="btn btn-outline-success" type="submit" id="button-search">Search</button>
+            </form>
+
+            <h1 id="location">
+                London
+            </h1>
+            <h2 id="heat">
+                <span class="temperature" id="temperature"></span>
+                <span class="units">
+                    <a href="#" id="celsius-units">°C</a> |
+                    <a href="#" id="fahrenheit-units">°F</a>
+                </span>
+            </h2>
+            <h3 id="date"></h3>
+
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-outline-info">
+                        Temperature
+                    </button>
+                    <button type="button" class="btn btn-outline-info">
+                        <li>
+                            Wind:
+                            <span id="wind">
+                                100
+                            </span>
+                            km/h
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-outline-info">
+                        <li>
+                            Humidity:
+                            <span id="humidity">
+                                100
+                            </span>
+                            %
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-outline-info" id="button-current">Current</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="card" h-100 style="width: 10rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">SAT</h5>
+                            <div class="icon">☁️</div>
+                            <p class="card-text">-1°C</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">hat & gloves</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <div class="card" h-100 style="width: 10rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">SUN</h5>
+                            <div class="icon">☁️</div>
+                            <p class="card-text">-1°C</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">hat & gloves</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <div class="card" style="width: 10rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">MON</h5>
+                            <div class="icon">❄️</div>
+                            <p class="card-text">-1°C</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">hat & gloves</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <div class="card" style="width: 10rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">TUE</h5>
+                            <div class="icon">⛅</div>
+                            <p class="card-text">-1°C</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">hat & gloves</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <div class="card" style="width: 10rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">WED</h5>
+                            <div class="icon">⛅</div>
+                            <p class="card-text">-1°C</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">hat & gloves</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <div class="card" style="width: 10rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">THU</h5>
+                            <div class="icon">☀</div>
+                            <p class="card-text">-1°C</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">hat & gloves</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span>
+            Hosted with
+            <a href="https://www.netlify.com">Netlify</a>
+        </span>
+        <script src="src/script.js"></script>
+</body>
+
+</html>
