@@ -1,0 +1,91 @@
+h1 {
+  color: rgb(0, 255, 213);
+  margin-top: 0px;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+h3 {
+  padding-bottom: 40px;
+}
+
+body {
+  margin: 0 auto;
+}
+
+div.container {
+  max-width: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: absolute;
+  background: linear-gradient(
+    to bottom,
+    rgb(247, 246, 188) 0%,
+    rgb(160, 228, 245) 100%
+  );
+
+  padding: 60px 200px 20px 200px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+div.card {
+  display: block;
+  text-align: center;
+  margin: 60px auto;
+  border: 5px solid #a2d9f7;
+}
+div.card1 bg-white text-dark {
+  border-style: inherit;
+}
+div.row {
+  margin: blank;
+}
+div.col-1 {
+  padding: 0px 50px 0px 0px;
+  margin: 0 auto;
+  text-decoration: rgb(0, 255, 213);
+}
+div.col {
+  text-align: center;
+}
+div.card-body {
+  margin: 0 auto;
+  border-spacing: 20px 20px;
+}
+div.icon {
+  margin: 0 auto;
+}
+
+.btn btn-outline-info {
+  display: block;
+  margin: 0 auto;
+}
+.d-flex {
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.card-text-top {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 30px;
+}
+.card-text-bottom {
+  text-align: right;
+  font-size: 30px;
+}
+.card-img-overlay {
+  padding: 60px 200px;
+  font-size: 30px;
+}
